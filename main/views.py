@@ -1,9 +1,7 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 
 from main.models import TestModel
 
 
-class TestView(ListView):
-    model = TestModel
+class TestView(TemplateView):
     template_name = "main/index.html"
-    context_object_name = "tests"

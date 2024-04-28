@@ -1,6 +1,6 @@
 from django.views.generic import ListView, TemplateView
 
-from .models import TestModel
+from main.models import TestModel
 
 
 class TestView(TemplateView):
